@@ -19,7 +19,8 @@ body {
 body {
     position: relative;
     font-family: "Microsoft Yahei", Arial, sans-serif;
-    background: #050d3c url("../img/bg.png") 0 0 / 100% 100% no-repeat;
+    background: #050d3c url("../img/bg02.png") 0 0 / 100% 100%;
+    background-size: cover;
 }
 
 
@@ -109,5 +110,5 @@ body {
 .chart-div {
     border-style: solid;
     border-width: 26px 27px 27px;
-    border-image: url("../img/chart-wrapper.png") 26 27 27 fill / 1 / 0 repeat;
+    border-image: url("../img/panel.png") 26 27 27 fill / 1 / 0 repeat;
 }

@@ -596,7 +596,7 @@ $(function() {
         animation: false,
         grid: {
             left: '20%',
-            top: 0,
+            top: '40px',
             bottom: 0,
             width: '70%',
             height: '70%',
