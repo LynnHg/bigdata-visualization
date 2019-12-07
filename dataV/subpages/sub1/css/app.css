@@ -19,26 +19,29 @@ body {
 body {
     position: relative;
     font-family: "Microsoft Yahei", Arial, sans-serif;
-    background: #050d3c url("../img/bg02.png") 0 0 / 100% 100%;
+    background: #050d3c url("../img/bg01.png") 0 0 / 100% 100%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
 /* layout */
 
-#header {
-    position: relative;
-    height: 72px;
-    background: url("../img/header.png") 0 0 / 100% 100% no-repeat;
-    overflow: hidden;
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: 97px;
+    max-width: 1920px;
+    background: url("../img/header.png") center no-repeat;
 }
 
-.header-title {
-    line-height: 64px;
+.header h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 74px;
     text-align: center;
     font-size: 32px;
-    font-weight: 400;
-    color: #bef2ff;
+    color: #5dc2fe;
 }
 
 #container {
@@ -111,4 +114,10 @@ body {
     border-style: solid;
     border-width: 26px 27px 27px;
     border-image: url("../img/panel.png") 26 27 27 fill / 1 / 0 repeat;
+}
+
+.mygraphy {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
 }

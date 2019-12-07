@@ -1,8 +1,8 @@
 $(function() {
+
+    // 关系图 
     let myChart = echarts.init(document.getElementById('g_1'));
-
     let devtype = ["学术研究员",  "数据或业务分析师",  "数据科学家或机器学习专家",  "数据库管理员",  "设计师",  " DevOps专家",  "开发人员,质量检查或测试",  "开发人员,后端",  "开发人员,桌面或企业应用程序",  "开发人员,嵌入式应用程序或设备",  "开发人员,前端",  "开发人员,全栈",  "开发人员,游戏或图形",  "移动开发人员",  "教育家",  "工程师,数据",  "工程师,现场可靠性",  "工程经理",  "营销或销售专业人员",  "产品经理",  "科学家",  "高级主管/副总裁",  "学生",  "系统管理员"]
-
     let devtype_corr = [
         ['学术研究员', '学术研究员', 1.0],
         ['学术研究员', '数据或业务分析师', 0.10851236866711911],
@@ -581,14 +581,12 @@ $(function() {
         ['系统管理员', '学生', 0.023608674783562884],
         ['系统管理员', '系统管理员', 1.0]
     ]
-
     let data_ = devtype_corr.map(function(item) {
         return [item[0], item[1], Math.round(item[2] * 100)];
     })
-
     let option = {
         textStyle: {
-            color: '#fff'
+            color: '#6de5ec'
         },
         tooltip: {
             position: 'top'
@@ -596,7 +594,7 @@ $(function() {
         animation: false,
         grid: {
             left: '20%',
-            top: '40px',
+            top: '80px',
             bottom: 0,
             width: '70%',
             height: '70%',
@@ -652,7 +650,2431 @@ $(function() {
             }
         }]
     };
-
     myChart.setOption(option);
 
+
+    // 2
+    let chart_c1d458aaf436460ca730d826365e0d40 = echarts.init(
+        document.getElementById('c1d458aaf436460ca730d826365e0d40'), 'white', { renderer: 'canvas' });
+
+    let mycolors = ['#b2fcff', '#5edfff', '#3e64ff' ,'$ecfcff', '#8ac6d1', '#248ea9', '#59d4e8', '#b1e8ed', '#00b7a8', '#7b88ff']
+    let option_c1d458aaf436460ca730d826365e0d40 = {
+
+        baseOption: {
+            "series": [{
+                    "type": "bar",
+                    "name": "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                    "data": [
+                        0.4802730107289288,
+                        0.2708133853821414,
+                        0.24751417838992415,
+                        0.0013994254990056714
+                    ],
+                    "barCategoryGap": "20%",
+                    "barGap": "0%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                    "data": [
+                        0.4076346284935242,
+                        0.22699386503067484,
+                        0.36383776414451263,
+                        0.0015337423312883436
+                    ],
+                    "barCategoryGap": "20%",
+                    "barGap": "0%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                    "data": [
+                        0.3800383877159309,
+                        0.2840690978886756,
+                        0.33397312859884837,
+                        0.0019193857965451055
+                    ],
+                    "barCategoryGap": "20%",
+                    "barGap": "0%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            timeline: {
+                "axisType": "category",
+                "orient": "horizontal",
+                "autoPlay": true,
+                "loop": true,
+                "rewind": false,
+                "show": true,
+                "inverse": false,
+                "bottom": '20px',
+                "label": {
+                    "show": false,
+                    "position": "top",
+                    "margin": 8
+                },
+                controlStyle: {
+                    color: '#6ef6ff',
+                    borderColor: '#6ef6ff',
+                },
+                lineStyle: {
+                    color: '#6ef6ff',
+                },
+                checkpointStyle: {
+                    color: '#6ef6ff',
+                },
+
+                "data": [
+                    "LanguageWorkedWith",
+                    "DatabaseWorkedWith",
+                    "PlatformWorkedWith",
+                    "WebFrameWorkedWith",
+                    "MiscTechWorkedWith",
+                    "DevEnviron",
+                    "OpSys"
+                ]
+            },
+            "xAxis": [{
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "axisLabel": {
+                    "show": true,
+                    "position": "top",
+                    "rotate": 45,
+                    "margin": 8,
+                },
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                },
+                "data": [
+                    "Windows",
+                    "MacOS",
+                    "Linux-based",
+                    "BSD"
+                ]
+            }],
+            "yAxis": [{
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "axisTick": {
+                    "show": true,
+                    "alignWithLabel": false,
+                    "inside": false
+                },
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                }
+            }]
+        },
+        "options": [{
+                textStyle: {
+                    color: '#6ef6ff',
+                    fontSize: 20
+                },
+                grid: {
+                    left: '15%',
+                    top: '80px',
+                    bottom: 0,
+                    width: '70%',
+                    height: '70%',
+                },
+                "legend": {
+                    textStyle: {
+                        color: '#6ef6ff',
+                        fontSize: 20,
+
+                    },
+                    "data": [
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458"
+                    ],
+                    "selected": {
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458": true
+                    },
+                    "show": true,
+                    "right": "5%",
+                    "top": "6%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                },
+                "series": [{
+                        "data": [
+                            0.6886271804474229,
+                            0.6431457573667094,
+                            0.5391864590519365,
+                            0.4122400709569331,
+                            0.3858036858184685,
+                            0.35868976052035084,
+                            0.3157829900463191,
+                            0.2689464866462994,
+                            0.22738247757958016,
+                            0.21763821819256923,
+                            0.20132797871292007,
+                            0.08916428501034789,
+                            0.08506208731644821,
+                            0.08177293781413225,
+                            0.06673154626983345,
+                            0.06548733615847048,
+                            0.06489602838277324,
+                            0.052860451364935446,
+                            0.04849955651916823,
+                            0.037856016556617716,
+                            0.03323642455898295,
+                            0.03149945796787228,
+                            0.01926677835813541,
+                            0.01419138661673401,
+                            0.013723267960973687,
+                            0.01101310732236129,
+                            0.010754410170493741,
+                            0.008401497979698433
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.5446185286103542,
+                            0.5340599455040872,
+                            0.5933242506811989,
+                            0.39952316076294275,
+                            0.7947888283378747,
+                            0.45895776566757496,
+                            0.24029291553133514,
+                            0.20027247956403268,
+                            0.33446866485013627,
+                            0.14356267029972752,
+                            0.27401226158038144,
+                            0.10882152588555859,
+                            0.07118528610354223,
+                            0.09315395095367847,
+                            0.05483651226158038,
+                            0.05108991825613079,
+                            0.09366485013623978,
+                            0.07714577656675749,
+                            0.042915531335149866,
+                            0.2903610354223433,
+                            0.09485694822888284,
+                            0.03967983651226158,
+                            0.02026566757493188,
+                            0.017881471389645777,
+                            0.02196866485013624,
+                            0.020095367847411442,
+                            0.01600817438692098,
+                            0.016178474114441416
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.23224568138195778,
+                            0.23416506717850288,
+                            0.5585412667946257,
+                            0.2053742802303263,
+                            0.8790786948176583,
+                            0.3435700575815739,
+                            0.09980806142034548,
+                            0.04222648752399232,
+                            0.19577735124760076,
+                            0.02495201535508637,
+                            0.12476007677543186,
+                            0.08253358925143954,
+                            0.015355086372360844,
+                            0.030710172744721688,
+                            0.009596928982725527,
+                            0.007677543186180422,
+                            0.028790786948176585,
+                            0.0710172744721689,
+                            0.003838771593090211,
+                            0.5182341650671785,
+                            0.1036468330134357,
+                            0.007677543186180422,
+                            null,
+                            0.005758157389635317,
+                            0.02111324376199616,
+                            0.005758157389635317,
+                            0.011516314779270634,
+                            null
+                        ]
+                    }
+                ],
+                "xAxis": [{
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLabel": {
+                        "show": true,
+                        "position": "top",
+                        "rotate": 45,
+                        "margin": 8
+                    },
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "JavaScript",
+                        "HTML/CSS",
+                        "SQL",
+                        "Java",
+                        "Python",
+                        "Bash/Shell/PowerShell",
+                        "C#",
+                        "PHP",
+                        "C++",
+                        "TypeScript",
+                        "C",
+                        "Other(s):",
+                        "Ruby",
+                        "Go",
+                        "Swift",
+                        "Kotlin",
+                        "Assembly",
+                        "VBA",
+                        "Objective-C",
+                        "R",
+                        "Scala",
+                        "Rust",
+                        "Dart",
+                        "Elixir",
+                        "Clojure",
+                        "WebAssembly",
+                        "F#",
+                        "Erlang"
+                    ]
+                }],
+                "title": [
+                    {}
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0
+                },
+                color: mycolors
+            },
+            {
+                "legend": [{
+                    "data": [
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458"
+                    ],
+                    "selected": {
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458": true
+                    },
+                    "show": true,
+                    "right": "5%",
+                    "top": "6%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }],
+                "series": [{
+                        "data": [
+                            0.5330961560267604,
+                            0.3302953849642817,
+                            0.32427145934913254,
+                            0.30563272479873,
+                            0.2464706882866538,
+                            0.18385020977435082,
+                            0.16345390633858714,
+                            0.15991042068261707,
+                            0.13761480893525344,
+                            0.12732452659031637,
+                            0.06410874248781041,
+                            0.059516385077673206,
+                            0.0318063272479873,
+                            0.019574214763578637
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.5432123125493291,
+                            0.4485003946329913,
+                            0.31393054459352804,
+                            0.40390686661404895,
+                            0.3174822415153907,
+                            0.1898184688239937,
+                            0.1681136543014996,
+                            0.19928966061562747,
+                            0.186069455406472,
+                            0.12253354380426204,
+                            0.09688239936858721,
+                            0.07951854775059194,
+                            0.06412786108918705,
+                            0.026045777426992895
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.42610837438423643,
+                            0.4482758620689655,
+                            0.29802955665024633,
+                            0.2536945812807882,
+                            0.2512315270935961,
+                            0.09359605911330049,
+                            0.04187192118226601,
+                            0.15024630541871922,
+                            0.16748768472906403,
+                            0.019704433497536946,
+                            0.11083743842364532,
+                            0.0665024630541872,
+                            0.06896551724137931,
+                            0.009852216748768473
+                        ]
+                    }
+                ],
+                "xAxis": [{
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLabel": {
+                        "show": true,
+                        "position": "top",
+                        "rotate": 45,
+                        "margin": 8
+                    },
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "MySQL",
+                        "PostgreSQL",
+                        "Microsoft SQL Server",
+                        "SQLite",
+                        "MongoDB",
+                        "Redis",
+                        "MariaDB",
+                        "Oracle",
+                        "Elasticsearch",
+                        "Firebase",
+                        "Other(s):",
+                        "DynamoDB",
+                        "Cassandra",
+                        "Couchbase"
+                    ]
+                }],
+                "title": [
+                    {}
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0
+                },
+                color: mycolors
+            },
+            {
+                "legend": [{
+                    "data": [
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458"
+                    ],
+                    "selected": {
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458": true
+                    },
+                    "show": true,
+                    "right": "5%",
+                    "top": "6%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }],
+                "series": [{
+                        "data": [
+                            0.5165717798626146,
+                            0.5026862320583755,
+                            0.3068585785689466,
+                            0.27064122096597437,
+                            0.25837275813220006,
+                            0.21747788201961885,
+                            0.20361906289257745,
+                            0.1462726859647716,
+                            0.1447224226873012,
+                            0.13175901424638495,
+                            0.11699142009461952,
+                            0.11657712559805415,
+                            0.10588565471894795,
+                            0.10318605832197364,
+                            0.08273862026568306,
+                            0.035923342153796806,
+                            0.016638601555609013
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.7007888460832875,
+                            0.5200880572372042,
+                            0.386167675655843,
+                            0.24931205283434232,
+                            0.3316822601357549,
+                            0.2606861126398826,
+                            0.2564667033571822,
+                            0.21739130434782608,
+                            0.13703907539900936,
+                            0.10621904237754541,
+                            0.13226930838378279,
+                            0.20693450742982938,
+                            0.10621904237754541,
+                            0.14621170427444505,
+                            0.11153916712529811,
+                            0.02971931755641167,
+                            0.04788112272977435
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.6407322654462243,
+                            0.41418764302059496,
+                            0.3340961098398169,
+                            0.06636155606407322,
+                            0.37299771167048057,
+                            0.2562929061784897,
+                            0.2036613272311213,
+                            0.12128146453089245,
+                            0.043478260869565216,
+                            0.018306636155606407,
+                            0.12128146453089245,
+                            0.17620137299771166,
+                            0.057208237986270026,
+                            0.057208237986270026,
+                            0.08237986270022883,
+                            0.004576659038901602,
+                            0.018306636155606407
+                        ]
+                    }
+                ],
+                "xAxis": [{
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLabel": {
+                        "show": true,
+                        "position": "top",
+                        "rotate": 45,
+                        "margin": 8
+                    },
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "Linux",
+                        "Windows",
+                        "Docker",
+                        "Android",
+                        "AWS",
+                        "MacOS",
+                        "Slack",
+                        "Raspberry Pi",
+                        "WordPress",
+                        "iOS",
+                        "Microsoft Azure",
+                        "Google Cloud Platform",
+                        "Heroku",
+                        "Arduino",
+                        "Kubernetes",
+                        "Other(s):",
+                        "IBM Cloud or Watson"
+                    ]
+                }],
+                "title": [
+                    {}
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0
+                },
+                "color": mycolors
+            },
+            {
+                "legend": [{
+                    "data": [
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458"
+                    ],
+                    "selected": {
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458": true
+                    },
+                    "show": true,
+                    "right": "5%",
+                    "top": "6%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }],
+                "series": [{
+                        "data": [
+                            0.47976831189288527,
+                            0.30836505644526124,
+                            0.3034096875820425,
+                            0.26142032029404044,
+                            0.1942438960357049,
+                            0.15985166710422682,
+                            0.14977684431609345,
+                            0.11700905749540562,
+                            0.10366894197952219,
+                            0.10189682331320557,
+                            0.08084470989761092,
+                            0.08072985035442373,
+                            0.033063139931740614
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.43859649122807015,
+                            0.2742518059855521,
+                            0.2628998968008256,
+                            0.1932404540763674,
+                            0.17363261093911248,
+                            0.14138286893704852,
+                            0.1369969040247678,
+                            0.2742518059855521,
+                            0.09184726522187822,
+                            0.3506191950464396,
+                            0.08230134158926729,
+                            0.07714138286893704,
+                            0.04592363261093911
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.2079207920792079,
+                            0.10396039603960396,
+                            0.10891089108910891,
+                            0.0891089108910891,
+                            0.054455445544554455,
+                            0.039603960396039604,
+                            0.0594059405940594,
+                            0.2722772277227723,
+                            0.024752475247524754,
+                            0.6188118811881188,
+                            0.054455445544554455,
+                            0.0297029702970297,
+                            0.009900990099009901
+                        ]
+                    }
+                ],
+                "xAxis": [{
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLabel": {
+                        "show": true,
+                        "position": "top",
+                        "rotate": 45,
+                        "margin": 8
+                    },
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "jQuery",
+                        "React.js",
+                        "Angular/Angular.js",
+                        "ASP.NET",
+                        "Express",
+                        "Spring",
+                        "Vue.js",
+                        "Django",
+                        "Laravel",
+                        "Flask",
+                        "Other(s):",
+                        "Ruby on Rails",
+                        "Drupal"
+                    ]
+                }],
+                "title": [
+                    {}
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0
+                },
+                "color": mycolors
+            },
+            {
+                "legend": [{
+                    "data": [
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458"
+                    ],
+                    "selected": {
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458": true
+                    },
+                    "show": true,
+                    "right": "5%",
+                    "top": "6%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }],
+                "series": [{
+                        "data": [
+                            0.5055792885026147,
+                            0.3827797009648671,
+                            0.24215585180820506,
+                            0.11313250349856374,
+                            0.10536200928040068,
+                            0.09343006555203653,
+                            0.08217942107976725,
+                            0.07124180599543345,
+                            0.06647271120276939,
+                            0.06571775797304265,
+                            0.04457906754069382,
+                            0.042719304706488916,
+                            0.03656919790822715,
+                            0.03426751123223098,
+                            0.03393606835088753,
+                            0.02590778522501289,
+                            0.02504235103483833,
+                            0.017769021138690434,
+                            0.005247845621271267
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.3509169585823202,
+                            0.22130640840717083,
+                            0.14588914073768802,
+                            0.09725942715845869,
+                            0.08386565011333195,
+                            0.08510199876365135,
+                            0.5450236966824644,
+                            0.05625386358953225,
+                            0.4428188749227282,
+                            0.04883577168761591,
+                            0.06902946630949928,
+                            0.19575520296723675,
+                            0.16113744075829384,
+                            0.03956315681022048,
+                            0.033587471667010094,
+                            0.030084483824438492,
+                            0.02307850813929528,
+                            0.17700391510405936,
+                            0.01195137028642077
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.11058823529411765,
+                            0.06352941176470588,
+                            0.03764705882352941,
+                            0.02588235294117647,
+                            0.009411764705882352,
+                            0.04,
+                            0.7976470588235294,
+                            0.011764705882352941,
+                            0.5882352941176471,
+                            0.009411764705882352,
+                            0.047058823529411764,
+                            0.2917647058823529,
+                            0.20705882352941177,
+                            0.004705882352941176,
+                            0.009411764705882352,
+                            0.009411764705882352,
+                            0.009411764705882352,
+                            0.23058823529411765,
+                            0.002352941176470588
+                        ]
+                    }
+                ],
+                "xAxis": [{
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLabel": {
+                        "show": true,
+                        "position": "top",
+                        "rotate": 45,
+                        "margin": 8
+                    },
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "Node.js",
+                        ".NET",
+                        ".NET Core",
+                        "Unity 3D",
+                        "React Native",
+                        "Ansible",
+                        "Pandas",
+                        "Cordova",
+                        "TensorFlow",
+                        "Xamarin",
+                        "Other(s):",
+                        "Apache Spark",
+                        "Hadoop",
+                        "Unreal Engine",
+                        "Flutter",
+                        "Puppet",
+                        "Chef",
+                        "Torch/PyTorch",
+                        "CryEngine"
+                    ]
+                }],
+                "title": [
+                    {}
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0
+                },
+                "color": mycolors
+            },
+            {
+                "legend": [{
+                    "data": [
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458"
+                    ],
+                    "selected": {
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458": true
+                    },
+                    "show": true,
+                    "right": "5%",
+                    "top": "6%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }],
+                "series": [{
+                        "data": [
+                            0.5142878330943788,
+                            0.3207841004597815,
+                            0.3051243387551293,
+                            0.2543629801750136,
+                            0.24872694912740395,
+                            0.23075592030454342,
+                            0.17151579571859396,
+                            0.14422554011964206,
+                            0.12943095861966677,
+                            0.11993869580264004,
+                            0.09555297374796065,
+                            0.07805161417906759,
+                            0.06640876056755822,
+                            0.05844910268453058,
+                            0.04222079398823355,
+                            0.019071043654521183,
+                            0.013608048647846937,
+                            0.00867652148118851,
+                            0.0055247935927225985,
+                            0.0036090374252237107,
+                            0.002953972413111188,
+                            0.0015078854995797695
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.43555781966377993,
+                            0.25165562913907286,
+                            0.3109186619120394,
+                            0.2531839021905247,
+                            0.32331465444048224,
+                            0.2781456953642384,
+                            0.15078960774325012,
+                            0.15061979962642214,
+                            0.1823739174732552,
+                            0.31482424859908303,
+                            0.08422482594668025,
+                            0.05518763796909492,
+                            0.44523688232297504,
+                            0.065206316861946,
+                            0.08082866361012056,
+                            0.2041093564272372,
+                            0.016811003565970453,
+                            0.01664119544914247,
+                            0.020716590253014096,
+                            0.01239599252844286,
+                            0.011377143827474954,
+                            0.009169638308711156
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.26153846153846155,
+                            0.10384615384615385,
+                            0.19807692307692307,
+                            0.18269230769230768,
+                            0.25961538461538464,
+                            0.2230769230769231,
+                            0.04230769230769231,
+                            0.0673076923076923,
+                            0.17307692307692307,
+                            0.3192307692307692,
+                            0.023076923076923078,
+                            0.009615384615384616,
+                            0.6192307692307693,
+                            0.015384615384615385,
+                            0.057692307692307696,
+                            0.375,
+                            0.0038461538461538464,
+                            0.009615384615384616,
+                            0.01730769230769231,
+                            0.0057692307692307696,
+                            0.0019230769230769232,
+                            0.0038461538461538464
+                        ]
+                    }
+                ],
+                "xAxis": [{
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLabel": {
+                        "show": true,
+                        "position": "top",
+                        "rotate": 45,
+                        "margin": 8
+                    },
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "Visual Studio Code",
+                        "Visual Studio",
+                        "Notepad++",
+                        "IntelliJ",
+                        "Vim",
+                        "Sublime Text",
+                        "Android Studio",
+                        "Eclipse",
+                        "Atom",
+                        "PyCharm",
+                        "Xcode",
+                        "PHPStorm",
+                        "IPython / Jupyter",
+                        "NetBeans",
+                        "Emacs",
+                        "RStudio",
+                        "RubyMine",
+                        "TextMate",
+                        "Coda",
+                        "Komodo",
+                        "Zend",
+                        "Light Table"
+                    ]
+                }],
+                "title": [
+                    {}
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0
+                },
+                "color": mycolors
+            },
+            {
+                "legend": [{
+                    "data": [
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458",
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458"
+                    ],
+                    "selected": {
+                        "\u975e\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u6df7\u5408\u6570\u636e\u5f00\u53d1\u4eba\u5458": true,
+                        "\u7eaf\u6570\u636e\u5f00\u53d1\u4eba\u5458": true
+                    },
+                    "show": true,
+                    "right": "5%",
+                    "top": "6%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }],
+                "series": [{
+                        "data": [
+                            0.4802730107289288,
+                            0.2708133853821414,
+                            0.24751417838992415,
+                            0.0013994254990056714
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.4076346284935242,
+                            0.22699386503067484,
+                            0.36383776414451263,
+                            0.0015337423312883436
+                        ]
+                    },
+                    {
+                        "data": [
+                            0.3800383877159309,
+                            0.2840690978886756,
+                            0.33397312859884837,
+                            0.0019193857965451055
+                        ]
+                    }
+                ],
+                "xAxis": [{
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLabel": {
+                        "show": true,
+                        "position": "top",
+                        "rotate": 45,
+                        "margin": 8
+                    },
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "Windows",
+                        "MacOS",
+                        "Linux-based",
+                        "BSD"
+                    ]
+                }],
+                "title": [
+                    {}
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0
+                },
+                color: mycolors
+            }
+        ]
+    };
+    chart_c1d458aaf436460ca730d826365e0d40.setOption(option_c1d458aaf436460ca730d826365e0d40);
+
+
+
+    // 3
+    var chart_343c6f964eca45e58f1188674d3d80bb = echarts.init(
+        document.getElementById('343c6f964eca45e58f1188674d3d80bb'), 'white', { renderer: 'canvas' });
+    var option_343c6f964eca45e58f1188674d3d80bb = {
+        grid: {
+            left: '25%',
+            top: '80px',
+            bottom: 0,
+            width: '70%',
+            height: '70%',
+        },
+        "animation": true,
+        "animationThreshold": 2000,
+        "animationDuration": 1000,
+        "animationEasing": "cubicOut",
+        "animationDelay": 0,
+        "animationDurationUpdate": 300,
+        "animationEasingUpdate": "cubicOut",
+        "animationDelayUpdate": 0,
+        series: {
+            left: '80px',
+            "type": "graph",
+            "layout": "force",
+            "symbol": "circle",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 10000,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            label: {
+                "show": true,
+                color: '#fff',
+                fontSize: 18,
+                "position": "top",
+                "margin": 8
+            },
+            itemStyle: {
+                color: '#00b7a8',
+            },
+            lineStyle: {
+                color: '#b2fcff',
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [{
+                    "name": "AWS",
+                    "symbolSize": 30.988593155893536
+                },
+                {
+                    "name": "Apache Spark",
+                    "symbolSize": 23.574144486692013
+                },
+                {
+                    "name": "Bash/Shell/PowerShell",
+                    "symbolSize": 34.030418250950575
+                },
+                {
+                    "name": "Docker",
+                    "symbolSize": 27.756653992395435
+                },
+                {
+                    "name": "Flask",
+                    "symbolSize": 23.76425855513308
+                },
+                {
+                    "name": "HTML/CSS",
+                    "symbolSize": 23.193916349809886
+                },
+                {
+                    "name": "IPython / Jupyter",
+                    "symbolSize": 61.21673003802282
+                },
+                {
+                    "name": "Java",
+                    "symbolSize": 20.342205323193916
+                },
+                {
+                    "name": "JavaScript",
+                    "symbolSize": 23.00380228136882
+                },
+                {
+                    "name": "Linux",
+                    "symbolSize": 53.2319391634981
+                },
+                {
+                    "name": "MacOS",
+                    "symbolSize": 21.292775665399237
+                },
+                {
+                    "name": "Microsoft SQL Server",
+                    "symbolSize": 23.00380228136882
+                },
+                {
+                    "name": "MySQL",
+                    "symbolSize": 32.88973384030418
+                },
+                {
+                    "name": "Other(s):",
+                    "symbolSize": 30.228136882129274
+                },
+                {
+                    "name": "Pandas",
+                    "symbolSize": 64.44866920152091
+                },
+                {
+                    "name": "PostgreSQL",
+                    "symbolSize": 34.60076045627377
+                },
+                {
+                    "name": "PyCharm",
+                    "symbolSize": 31.55893536121673
+                },
+                {
+                    "name": "Python",
+                    "symbolSize": 87.07224334600761
+                },
+                {
+                    "name": "R",
+                    "symbolSize": 51.33079847908745
+                },
+                {
+                    "name": "RStudio",
+                    "symbolSize": 37.0722433460076
+                },
+                {
+                    "name": "SQL",
+                    "symbolSize": 55.32319391634981
+                },
+                {
+                    "name": "Sublime Text",
+                    "symbolSize": 22.0532319391635
+                },
+                {
+                    "name": "TensorFlow",
+                    "symbolSize": 47.52851711026616
+                },
+                {
+                    "name": "Vim",
+                    "symbolSize": 25.665399239543724
+                },
+                {
+                    "name": "Visual Studio Code",
+                    "symbolSize": 25.85551330798479
+                },
+                {
+                    "name": "Windows",
+                    "symbolSize": 34.4106463878327
+                }
+            ],
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [{
+                    "source": "AWS",
+                    "target": "IPython / Jupyter",
+                    "value": 22.623574144486692
+                },
+                {
+                    "source": "AWS",
+                    "target": "Pandas",
+                    "value": 23.00380228136882
+                },
+                {
+                    "source": "AWS",
+                    "target": "Python",
+                    "value": 29.65779467680608
+                },
+                {
+                    "source": "AWS",
+                    "target": "SQL",
+                    "value": 20.912547528517113
+                },
+                {
+                    "source": "Apache Spark",
+                    "target": "Pandas",
+                    "value": 20.342205323193916
+                },
+                {
+                    "source": "Apache Spark",
+                    "target": "Python",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "Bash/Shell/PowerShell",
+                    "target": "IPython / Jupyter",
+                    "value": 23.00380228136882
+                },
+                {
+                    "source": "Bash/Shell/PowerShell",
+                    "target": "Linux",
+                    "value": 23.76425855513308
+                },
+                {
+                    "source": "Bash/Shell/PowerShell",
+                    "target": "Pandas",
+                    "value": 23.193916349809886
+                },
+                {
+                    "source": "Bash/Shell/PowerShell",
+                    "target": "Python",
+                    "value": 31.55893536121673
+                },
+                {
+                    "source": "Bash/Shell/PowerShell",
+                    "target": "SQL",
+                    "value": 21.482889733840306
+                },
+                {
+                    "source": "Docker",
+                    "target": "IPython / Jupyter",
+                    "value": 20.342205323193916
+                },
+                {
+                    "source": "Docker",
+                    "target": "Linux",
+                    "value": 20.53231939163498
+                },
+                {
+                    "source": "Docker",
+                    "target": "Pandas",
+                    "value": 21.102661596958175
+                },
+                {
+                    "source": "Docker",
+                    "target": "Python",
+                    "value": 26.806083650190114
+                },
+                {
+                    "source": "Flask",
+                    "target": "Python",
+                    "value": 23.193916349809886
+                },
+                {
+                    "source": "HTML/CSS",
+                    "target": "Python",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "AWS",
+                    "value": 22.623574144486692
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "Bash/Shell/PowerShell",
+                    "value": 23.00380228136882
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "Docker",
+                    "value": 20.342205323193916
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "Linux",
+                    "value": 34.4106463878327
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "MySQL",
+                    "value": 22.623574144486692
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "Pandas",
+                    "value": 49.42965779467681
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "PostgreSQL",
+                    "value": 23.38403041825095
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "PyCharm",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "Python",
+                    "value": 58.935361216730044
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "R",
+                    "value": 29.84790874524715
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "RStudio",
+                    "value": 21.292775665399237
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "SQL",
+                    "value": 35.17110266159696
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "TensorFlow",
+                    "value": 33.26996197718631
+                },
+                {
+                    "source": "IPython / Jupyter",
+                    "target": "Windows",
+                    "value": 20.53231939163498
+                },
+                {
+                    "source": "JavaScript",
+                    "target": "Python",
+                    "value": 21.863117870722434
+                },
+                {
+                    "source": "Linux",
+                    "target": "Bash/Shell/PowerShell",
+                    "value": 23.76425855513308
+                },
+                {
+                    "source": "Linux",
+                    "target": "Docker",
+                    "value": 20.53231939163498
+                },
+                {
+                    "source": "Linux",
+                    "target": "IPython / Jupyter",
+                    "value": 34.4106463878327
+                },
+                {
+                    "source": "Linux",
+                    "target": "MySQL",
+                    "value": 20.15209125475285
+                },
+                {
+                    "source": "Linux",
+                    "target": "Pandas",
+                    "value": 37.832699619771866
+                },
+                {
+                    "source": "Linux",
+                    "target": "PostgreSQL",
+                    "value": 21.482889733840306
+                },
+                {
+                    "source": "Linux",
+                    "target": "Python",
+                    "value": 49.619771863117876
+                },
+                {
+                    "source": "Linux",
+                    "target": "R",
+                    "value": 24.334600760456272
+                },
+                {
+                    "source": "Linux",
+                    "target": "SQL",
+                    "value": 28.517110266159694
+                },
+                {
+                    "source": "Linux",
+                    "target": "TensorFlow",
+                    "value": 30.798479087452474
+                },
+                {
+                    "source": "Linux",
+                    "target": "Windows",
+                    "value": 21.102661596958175
+                },
+                {
+                    "source": "Microsoft SQL Server",
+                    "target": "Python",
+                    "value": 20.15209125475285
+                },
+                {
+                    "source": "MySQL",
+                    "target": "IPython / Jupyter",
+                    "value": 22.623574144486692
+                },
+                {
+                    "source": "MySQL",
+                    "target": "Linux",
+                    "value": 20.15209125475285
+                },
+                {
+                    "source": "MySQL",
+                    "target": "Pandas",
+                    "value": 23.76425855513308
+                },
+                {
+                    "source": "MySQL",
+                    "target": "Python",
+                    "value": 30.60836501901141
+                },
+                {
+                    "source": "MySQL",
+                    "target": "SQL",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "Other(s):",
+                    "target": "Python",
+                    "value": 20.342205323193916
+                },
+                {
+                    "source": "Pandas",
+                    "target": "AWS",
+                    "value": 23.00380228136882
+                },
+                {
+                    "source": "Pandas",
+                    "target": "Apache Spark",
+                    "value": 20.342205323193916
+                },
+                {
+                    "source": "Pandas",
+                    "target": "Bash/Shell/PowerShell",
+                    "value": 23.193916349809886
+                },
+                {
+                    "source": "Pandas",
+                    "target": "Docker",
+                    "value": 21.102661596958175
+                },
+                {
+                    "source": "Pandas",
+                    "target": "IPython / Jupyter",
+                    "value": 49.42965779467681
+                },
+                {
+                    "source": "Pandas",
+                    "target": "Linux",
+                    "value": 37.832699619771866
+                },
+                {
+                    "source": "Pandas",
+                    "target": "MySQL",
+                    "value": 23.76425855513308
+                },
+                {
+                    "source": "Pandas",
+                    "target": "PostgreSQL",
+                    "value": 25.475285171102662
+                },
+                {
+                    "source": "Pandas",
+                    "target": "PyCharm",
+                    "value": 23.954372623574145
+                },
+                {
+                    "source": "Pandas",
+                    "target": "Python",
+                    "value": 63.49809885931559
+                },
+                {
+                    "source": "Pandas",
+                    "target": "R",
+                    "value": 32.88973384030418
+                },
+                {
+                    "source": "Pandas",
+                    "target": "RStudio",
+                    "value": 22.24334600760456
+                },
+                {
+                    "source": "Pandas",
+                    "target": "SQL",
+                    "value": 40.11406844106464
+                },
+                {
+                    "source": "Pandas",
+                    "target": "TensorFlow",
+                    "value": 38.40304182509506
+                },
+                {
+                    "source": "Pandas",
+                    "target": "Windows",
+                    "value": 22.623574144486692
+                },
+                {
+                    "source": "PostgreSQL",
+                    "target": "IPython / Jupyter",
+                    "value": 23.38403041825095
+                },
+                {
+                    "source": "PostgreSQL",
+                    "target": "Linux",
+                    "value": 21.482889733840306
+                },
+                {
+                    "source": "PostgreSQL",
+                    "target": "Pandas",
+                    "value": 25.475285171102662
+                },
+                {
+                    "source": "PostgreSQL",
+                    "target": "Python",
+                    "value": 31.368821292775667
+                },
+                {
+                    "source": "PostgreSQL",
+                    "target": "SQL",
+                    "value": 24.524714828897338
+                },
+                {
+                    "source": "PyCharm",
+                    "target": "IPython / Jupyter",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "PyCharm",
+                    "target": "Pandas",
+                    "value": 23.954372623574145
+                },
+                {
+                    "source": "PyCharm",
+                    "target": "Python",
+                    "value": 30.418250950570343
+                },
+                {
+                    "source": "Python",
+                    "target": "AWS",
+                    "value": 29.65779467680608
+                },
+                {
+                    "source": "Python",
+                    "target": "Apache Spark",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "Python",
+                    "target": "Bash/Shell/PowerShell",
+                    "value": 31.55893536121673
+                },
+                {
+                    "source": "Python",
+                    "target": "Docker",
+                    "value": 26.806083650190114
+                },
+                {
+                    "source": "Python",
+                    "target": "Flask",
+                    "value": 23.193916349809886
+                },
+                {
+                    "source": "Python",
+                    "target": "HTML/CSS",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "Python",
+                    "target": "IPython / Jupyter",
+                    "value": 58.935361216730044
+                },
+                {
+                    "source": "Python",
+                    "target": "JavaScript",
+                    "value": 21.863117870722434
+                },
+                {
+                    "source": "Python",
+                    "target": "Linux",
+                    "value": 49.619771863117876
+                },
+                {
+                    "source": "Python",
+                    "target": "Microsoft SQL Server",
+                    "value": 20.15209125475285
+                },
+                {
+                    "source": "Python",
+                    "target": "MySQL",
+                    "value": 30.60836501901141
+                },
+                {
+                    "source": "Python",
+                    "target": "Other(s):",
+                    "value": 20.342205323193916
+                },
+                {
+                    "source": "Python",
+                    "target": "Pandas",
+                    "value": 63.49809885931559
+                },
+                {
+                    "source": "Python",
+                    "target": "PostgreSQL",
+                    "value": 31.368821292775667
+                },
+                {
+                    "source": "Python",
+                    "target": "PyCharm",
+                    "value": 30.418250950570343
+                },
+                {
+                    "source": "Python",
+                    "target": "R",
+                    "value": 42.39543726235742
+                },
+                {
+                    "source": "Python",
+                    "target": "RStudio",
+                    "value": 28.517110266159694
+                },
+                {
+                    "source": "Python",
+                    "target": "SQL",
+                    "value": 49.619771863117876
+                },
+                {
+                    "source": "Python",
+                    "target": "Sublime Text",
+                    "value": 20.722433460076044
+                },
+                {
+                    "source": "Python",
+                    "target": "TensorFlow",
+                    "value": 46.57794676806083
+                },
+                {
+                    "source": "Python",
+                    "target": "Vim",
+                    "value": 24.524714828897338
+                },
+                {
+                    "source": "Python",
+                    "target": "Visual Studio Code",
+                    "value": 23.76425855513308
+                },
+                {
+                    "source": "Python",
+                    "target": "Windows",
+                    "value": 30.418250950570343
+                },
+                {
+                    "source": "R",
+                    "target": "IPython / Jupyter",
+                    "value": 29.84790874524715
+                },
+                {
+                    "source": "R",
+                    "target": "Linux",
+                    "value": 24.334600760456272
+                },
+                {
+                    "source": "R",
+                    "target": "Pandas",
+                    "value": 32.88973384030418
+                },
+                {
+                    "source": "R",
+                    "target": "Python",
+                    "value": 42.39543726235742
+                },
+                {
+                    "source": "R",
+                    "target": "RStudio",
+                    "value": 34.4106463878327
+                },
+                {
+                    "source": "R",
+                    "target": "SQL",
+                    "value": 36.31178707224335
+                },
+                {
+                    "source": "R",
+                    "target": "TensorFlow",
+                    "value": 23.38403041825095
+                },
+                {
+                    "source": "RStudio",
+                    "target": "IPython / Jupyter",
+                    "value": 21.292775665399237
+                },
+                {
+                    "source": "RStudio",
+                    "target": "Pandas",
+                    "value": 22.24334600760456
+                },
+                {
+                    "source": "RStudio",
+                    "target": "Python",
+                    "value": 28.517110266159694
+                },
+                {
+                    "source": "RStudio",
+                    "target": "R",
+                    "value": 34.4106463878327
+                },
+                {
+                    "source": "RStudio",
+                    "target": "SQL",
+                    "value": 26.045627376425855
+                },
+                {
+                    "source": "SQL",
+                    "target": "AWS",
+                    "value": 20.912547528517113
+                },
+                {
+                    "source": "SQL",
+                    "target": "Bash/Shell/PowerShell",
+                    "value": 21.482889733840306
+                },
+                {
+                    "source": "SQL",
+                    "target": "IPython / Jupyter",
+                    "value": 35.17110266159696
+                },
+                {
+                    "source": "SQL",
+                    "target": "Linux",
+                    "value": 28.517110266159694
+                },
+                {
+                    "source": "SQL",
+                    "target": "MySQL",
+                    "value": 22.0532319391635
+                },
+                {
+                    "source": "SQL",
+                    "target": "Pandas",
+                    "value": 40.11406844106464
+                },
+                {
+                    "source": "SQL",
+                    "target": "PostgreSQL",
+                    "value": 24.524714828897338
+                },
+                {
+                    "source": "SQL",
+                    "target": "Python",
+                    "value": 49.619771863117876
+                },
+                {
+                    "source": "SQL",
+                    "target": "R",
+                    "value": 36.31178707224335
+                },
+                {
+                    "source": "SQL",
+                    "target": "RStudio",
+                    "value": 26.045627376425855
+                },
+                {
+                    "source": "SQL",
+                    "target": "TensorFlow",
+                    "value": 27.376425855513308
+                },
+                {
+                    "source": "Sublime Text",
+                    "target": "Python",
+                    "value": 20.722433460076044
+                },
+                {
+                    "source": "TensorFlow",
+                    "target": "IPython / Jupyter",
+                    "value": 33.26996197718631
+                },
+                {
+                    "source": "TensorFlow",
+                    "target": "Linux",
+                    "value": 30.798479087452474
+                },
+                {
+                    "source": "TensorFlow",
+                    "target": "Pandas",
+                    "value": 38.40304182509506
+                },
+                {
+                    "source": "TensorFlow",
+                    "target": "Python",
+                    "value": 46.57794676806083
+                },
+                {
+                    "source": "TensorFlow",
+                    "target": "R",
+                    "value": 23.38403041825095
+                },
+                {
+                    "source": "TensorFlow",
+                    "target": "SQL",
+                    "value": 27.376425855513308
+                },
+                {
+                    "source": "Vim",
+                    "target": "Python",
+                    "value": 24.524714828897338
+                },
+                {
+                    "source": "Visual Studio Code",
+                    "target": "Python",
+                    "value": 23.76425855513308
+                },
+                {
+                    "source": "Windows",
+                    "target": "IPython / Jupyter",
+                    "value": 20.53231939163498
+                },
+                {
+                    "source": "Windows",
+                    "target": "Linux",
+                    "value": 21.102661596958175
+                },
+                {
+                    "source": "Windows",
+                    "target": "Pandas",
+                    "value": 22.623574144486692
+                },
+                {
+                    "source": "Windows",
+                    "target": "Python",
+                    "value": 30.418250950570343
+                }
+            ]
+        },
+        "legend": [{
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }],
+        "tooltip": {
+            "show": true,
+            "trigger": "item",
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0
+        },
+    };
+    chart_343c6f964eca45e58f1188674d3d80bb.setOption(option_343c6f964eca45e58f1188674d3d80bb);
+
+
+    // 4 
+    var chart_80182049d1254b75a640d9dcbea2f33f = echarts.init(
+        document.getElementById('80182049d1254b75a640d9dcbea2f33f'), 'white', {renderer: 'canvas'});
+    var option_80182049d1254b75a640d9dcbea2f33f = {
+"baseOption": {
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u81ea\u5b66\u4e86\u65b0\u7684\u8bed\u8a00,\u6846\u67b6\u6216\u5de5\u5177",
+                    "value": 0.825147347740668
+                },
+                {
+                    "name": "\u53c2\u52a0\u5728\u7ebf\u8bfe\u7a0b(mooc)",
+                    "value": 0.7426326129666012
+                },
+                {
+                    "name": "\u53c2\u4e0e\u5f00\u6e90\u8f6f\u4ef6",
+                    "value": 0.34970530451866405
+                },
+                {
+                    "name": "\u63a5\u53d7\u8f6f\u4ef6\u5f00\u53d1\u7684\u5728\u804c\u57f9\u8bad",
+                    "value": 0.3654223968565815
+                },
+                {
+                    "name": "\u53c2\u52a0\u9ed1\u5ba2\u9a6c\u62c9\u677e",
+                    "value": 0.3379174852652259
+                },
+                {
+                    "name": "\u53c2\u52a0\u5728\u7ebf\u7f16\u7801\u7ade\u8d5b",
+                    "value": 0.29862475442043224
+                },
+                {
+                    "name": "\u53c2\u52a0\u975e\u5168\u65e5\u5236\u8bfe\u7a0b",
+                    "value": 0.1237721021611002
+                },
+                {
+                    "name": "\u53c2\u52a0\u57f9\u8bad\u8ba1\u5212\u6216\u8bad\u7ec3\u8425",
+                    "value": 0.09233791748526522
+                },
+                {
+                    "name": "\u5b8c\u6210\u884c\u4e1a\u8ba4\u8bc1\u8ba1\u5212",
+                    "value": 0.06286836935166994
+                }
+            ],
+            "radius": [
+                "30%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "area",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "timeline": {
+        "axisType": "category",
+        "orient": "horizontal",
+        "autoPlay": true,
+        "loop": true,
+        "rewind": false,
+        "show": true,
+        "inverse": false,
+        "top": "top",
+        "bottom": "-5px",
+        "label": {
+            "show": false,
+            "position": "top",
+            "margin": 8
+        },
+        controlStyle: {
+            color: '#6ef6ff',
+            borderColor: '#6ef6ff',
+        },
+        lineStyle: {
+            color: '#6ef6ff',
+        },
+        checkpointStyle: {
+            color: '#6ef6ff',
+        },
+        "data": [
+            "EdLevel",
+            "UndergradMajor",
+            "EduOther"
+        ]
+    }
+},
+"options": [
+    {
+        "legend": [
+            {
+                "data": [
+                    "\u5b66\u58eb\u5b66\u4f4d",
+                    "\u7855\u58eb\u5b66\u4f4d",
+                    "\u6ca1\u6709\u5b66\u4f4d\u7684\u5927\u5b66",
+                    "\u4e2d\u5b66",
+                    "Associate degree",
+                    "Ph.D, Ed.D., etc.",
+                    "\u5c0f\u5b66/\u5c0f\u5b66",
+                    "Professional",
+                    "\u672a\u53d7\u8fc7\u4efb\u4f55\u6b63\u89c4\u6559\u80b2"
+                ],
+                "selected": {},
+                "show": false,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14
+            }
+        ],
+        "series": [
+            {
+                label: {
+                    fontSize: 16,
+                },
+                "data": [
+                    {
+                        "name": "\u5b66\u58eb\u5b66\u4f4d",
+                        "value": 0.2720306513409962
+                    },
+                    {
+                        "name": "\u7855\u58eb\u5b66\u4f4d",
+                        "value": 0.4827586206896552
+                    },
+                    {
+                        "name": "\u6ca1\u6709\u5b66\u4f4d\u7684\u5927\u5b66",
+                        "value": 0.019157088122605363
+                    },
+                    {
+                        "name": "\u4e2d\u5b66",
+                        "value": 0.017241379310344827
+                    },
+                    {
+                        "name": "Associate degree",
+                        "value": 0.005747126436781609
+                    },
+                    {
+                        "name": "Ph.D, Ed.D., etc.",
+                        "value": 0.19157088122605365
+                    },
+                    {
+                        "name": "\u5c0f\u5b66/\u5c0f\u5b66",
+                        "value": 0.0038314176245210726
+                    },
+                    {
+                        "name": "Professional",
+                        "value": 0.0038314176245210726
+                    },
+                    {
+                        "name": "\u672a\u53d7\u8fc7\u4efb\u4f55\u6b63\u89c4\u6559\u80b2",
+                        "value": 0.0038314176245210726
+                    }
+                ]
+            }
+        ],
+        "title": [
+            {}
+        ],
+        "tooltip": {
+            "show": true,
+            "trigger": "item",
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0
+        },
+        "color": mycolors
+    },
+    {
+        "legend": [
+            {
+                "data": [
+                    "\u8ba1\u7b97\u673a\u5b66\u79d1",
+                    "\u5de5\u7a0b\u5b66\u79d1(\u4f8b\u5982\u571f\u6728,\u7535\u6c14,\u673a\u68b0)",
+                    "\u4fe1\u606f\u7cfb\u7edf,\u4fe1\u606f\u6280\u672f\u6216\u7cfb\u7edf\u7ba1\u7406",
+                    "\u7f51\u9875\u5f00\u53d1\u6216\u7f51\u9875\u8bbe\u8ba1",
+                    "\u81ea\u7136\u79d1\u5b66(\u4f8b\u5982\u751f\u7269\u5b66,\u5316\u5b66,\u7269\u7406\u5b66)",
+                    "\u6570\u5b66\u6216\u7edf\u8ba1\u5b66",
+                    "\u5546\u4e1a\u5b66\u79d1(\u4f8b\u5982\u4f1a\u8ba1,\u8d22\u52a1,\u5e02\u573a\u8425\u9500)",
+                    "\u4eba\u6587\u5b66\u79d1(\u4f8b\u5982\u6587\u5b66,\u5386\u53f2,\u54f2\u5b66)",
+                    "\u7f8e\u672f\u6216\u8868\u6f14\u827a\u672f(\u4f8b\u5982\u5e73\u9762\u8bbe\u8ba1,\u97f3\u4e50)",
+                    "\u793e\u4f1a\u79d1\u5b66(\u4f8b\u5982\u4eba\u7c7b\u5b66,\u5fc3\u7406\u5b66,\u653f\u6cbb\u5b66)",
+                    "\u672a\u53d7\u6559\u80b2",
+                    "\u5065\u5eb7\u79d1\u5b66(\u4f8b\u5982\u533b\u5b66,\u836f\u5b66)"
+                ],
+                "selected": {},
+                "show": false,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14
+            }
+        ],
+        "series": [
+            {
+                "data": [
+                    {
+                        "name": "\u8ba1\u7b97\u673a\u5b66\u79d1",
+                        "value": 0.298989898989899
+                    },
+                    {
+                        "name": "\u5de5\u7a0b\u5b66\u79d1(\u4f8b\u5982\u571f\u6728,\u7535\u6c14,\u673a\u68b0)",
+                        "value": 0.1111111111111111
+                    },
+                    {
+                        "name": "\u4fe1\u606f\u7cfb\u7edf,\u4fe1\u606f\u6280\u672f\u6216\u7cfb\u7edf\u7ba1\u7406",
+                        "value": 0.03434343434343434
+                    },
+                    {
+                        "name": "\u7f51\u9875\u5f00\u53d1\u6216\u7f51\u9875\u8bbe\u8ba1",
+                        "value": 0.00404040404040404
+                    },
+                    {
+                        "name": "\u81ea\u7136\u79d1\u5b66(\u4f8b\u5982\u751f\u7269\u5b66,\u5316\u5b66,\u7269\u7406\u5b66)",
+                        "value": 0.1393939393939394
+                    },
+                    {
+                        "name": "\u6570\u5b66\u6216\u7edf\u8ba1\u5b66",
+                        "value": 0.32323232323232326
+                    },
+                    {
+                        "name": "\u5546\u4e1a\u5b66\u79d1(\u4f8b\u5982\u4f1a\u8ba1,\u8d22\u52a1,\u5e02\u573a\u8425\u9500)",
+                        "value": 0.01818181818181818
+                    },
+                    {
+                        "name": "\u4eba\u6587\u5b66\u79d1(\u4f8b\u5982\u6587\u5b66,\u5386\u53f2,\u54f2\u5b66)",
+                        "value": 0.01818181818181818
+                    },
+                    {
+                        "name": "\u7f8e\u672f\u6216\u8868\u6f14\u827a\u672f(\u4f8b\u5982\u5e73\u9762\u8bbe\u8ba1,\u97f3\u4e50)",
+                        "value": 0.00202020202020202
+                    },
+                    {
+                        "name": "\u793e\u4f1a\u79d1\u5b66(\u4f8b\u5982\u4eba\u7c7b\u5b66,\u5fc3\u7406\u5b66,\u653f\u6cbb\u5b66)",
+                        "value": 0.044444444444444446
+                    },
+                    {
+                        "name": "\u672a\u53d7\u6559\u80b2",
+                        "value": null
+                    },
+                    {
+                        "name": "\u5065\u5eb7\u79d1\u5b66(\u4f8b\u5982\u533b\u5b66,\u836f\u5b66)",
+                        "value": 0.006060606060606061
+                    }
+                ]
+            }
+        ],
+        "title": [
+            {}
+        ],
+        "tooltip": {
+            "show": true,
+            "trigger": "item",
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0
+        },
+        "color": mycolors
+    },
+    {
+        "legend": [
+            {
+                "data": [
+                    "\u81ea\u5b66\u4e86\u65b0\u7684\u8bed\u8a00,\u6846\u67b6\u6216\u5de5\u5177",
+                    "\u53c2\u52a0\u5728\u7ebf\u8bfe\u7a0b(mooc)",
+                    "\u53c2\u4e0e\u5f00\u6e90\u8f6f\u4ef6",
+                    "\u63a5\u53d7\u8f6f\u4ef6\u5f00\u53d1\u7684\u5728\u804c\u57f9\u8bad",
+                    "\u53c2\u52a0\u9ed1\u5ba2\u9a6c\u62c9\u677e",
+                    "\u53c2\u52a0\u5728\u7ebf\u7f16\u7801\u7ade\u8d5b",
+                    "\u53c2\u52a0\u975e\u5168\u65e5\u5236\u8bfe\u7a0b",
+                    "\u53c2\u52a0\u57f9\u8bad\u8ba1\u5212\u6216\u8bad\u7ec3\u8425",
+                    "\u5b8c\u6210\u884c\u4e1a\u8ba4\u8bc1\u8ba1\u5212"
+                ],
+                "selected": {},
+                "show": false,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14
+            }
+        ],
+        "series": [
+            {
+                "data": [
+                    {
+                        "name": "\u81ea\u5b66\u4e86\u65b0\u7684\u8bed\u8a00,\u6846\u67b6\u6216\u5de5\u5177",
+                        "value": 0.825147347740668
+                    },
+                    {
+                        "name": "\u53c2\u52a0\u5728\u7ebf\u8bfe\u7a0b(mooc)",
+                        "value": 0.7426326129666012
+                    },
+                    {
+                        "name": "\u53c2\u4e0e\u5f00\u6e90\u8f6f\u4ef6",
+                        "value": 0.34970530451866405
+                    },
+                    {
+                        "name": "\u63a5\u53d7\u8f6f\u4ef6\u5f00\u53d1\u7684\u5728\u804c\u57f9\u8bad",
+                        "value": 0.3654223968565815
+                    },
+                    {
+                        "name": "\u53c2\u52a0\u9ed1\u5ba2\u9a6c\u62c9\u677e",
+                        "value": 0.3379174852652259
+                    },
+                    {
+                        "name": "\u53c2\u52a0\u5728\u7ebf\u7f16\u7801\u7ade\u8d5b",
+                        "value": 0.29862475442043224
+                    },
+                    {
+                        "name": "\u53c2\u52a0\u975e\u5168\u65e5\u5236\u8bfe\u7a0b",
+                        "value": 0.1237721021611002
+                    },
+                    {
+                        "name": "\u53c2\u52a0\u57f9\u8bad\u8ba1\u5212\u6216\u8bad\u7ec3\u8425",
+                        "value": 0.09233791748526522
+                    },
+                    {
+                        "name": "\u5b8c\u6210\u884c\u4e1a\u8ba4\u8bc1\u8ba1\u5212",
+                        "value": 0.06286836935166994
+                    }
+                ]
+            }
+        ],
+        "title": [
+            {}
+        ],
+        "tooltip": {
+            "show": true,
+            "trigger": "item",
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0
+        },
+        "color": mycolors
+    }
+]
+};
+    chart_80182049d1254b75a640d9dcbea2f33f.setOption(option_80182049d1254b75a640d9dcbea2f33f);
 })
