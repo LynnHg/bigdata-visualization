@@ -1,5 +1,5 @@
 $(function() {
-
+    let mycolors = ['#b2fcff', '#5edfff', '#3e64ff' ,'$ecfcff', '#8ac6d1', '#248ea9', '#59d4e8', '#b1e8ed', '#00b7a8', '#7b88ff']
     // 关系图 
     let myChart = echarts.init(document.getElementById('g_1'));
     let devtype = ["学术研究员",  "数据或业务分析师",  "数据科学家或机器学习专家",  "数据库管理员",  "设计师",  " DevOps专家",  "开发人员,质量检查或测试",  "开发人员,后端",  "开发人员,桌面或企业应用程序",  "开发人员,嵌入式应用程序或设备",  "开发人员,前端",  "开发人员,全栈",  "开发人员,游戏或图形",  "移动开发人员",  "教育家",  "工程师,数据",  "工程师,现场可靠性",  "工程经理",  "营销或销售专业人员",  "产品经理",  "科学家",  "高级主管/副总裁",  "学生",  "系统管理员"]
@@ -657,7 +657,6 @@ $(function() {
     let chart_c1d458aaf436460ca730d826365e0d40 = echarts.init(
         document.getElementById('c1d458aaf436460ca730d826365e0d40'), 'white', { renderer: 'canvas' });
 
-    let mycolors = ['#b2fcff', '#5edfff', '#3e64ff' ,'$ecfcff', '#8ac6d1', '#248ea9', '#59d4e8', '#b1e8ed', '#00b7a8', '#7b88ff']
     let option_c1d458aaf436460ca730d826365e0d40 = {
 
         baseOption: {
