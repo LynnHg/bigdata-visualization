@@ -45,56 +45,18 @@ body {
 }
 
 #container {
-    position: absolute;
-    top: 64px;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-}
-
-#flexCon {
-    height: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-.flex-row {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    width: 60%;
+    min-width: 1200px;
+    margin: 0 auto;
 }
 
 .flex-cell {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 15px;
+    margin-bottom: 50px;
 }
 
-.flex-cell-l,
-.flex-cell-r {
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-}
-
-.flex-cell-c {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-}
-
-.flex-cell-lc {
-    -webkit-flex: 5;
-    -ms-flex: 5;
-    flex: 5;
+.chart-div {
+    width: 100%;
+    
 }
 
 .chart-wrapper {
@@ -117,7 +79,10 @@ body {
 }
 
 .mygraphy {
+    display: block;
     width: 1000px;
     height: 1000px;
+    min-width: 500px;
+    min-height: 500px;
     margin: 0 auto;
 }
