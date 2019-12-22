@@ -245,7 +245,7 @@ const config2 = {
     text_y: -50,
 
     // 右侧文字横坐标
-    text_x: 700,
+    text_x: 800,
     // 偏移量
     offset: 350,
 
