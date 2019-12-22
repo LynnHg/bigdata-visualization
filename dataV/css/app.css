@@ -1,4 +1,4 @@
-.header {
+﻿.header {
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -122,7 +122,7 @@ img {
     /* border-top: 1px solid #000; */
     background: #bae8e800;
     position: absolute;
-    left: 726px;
+    left: 35%;
     top: 30px;
 }
 
