@@ -24,7 +24,7 @@
         }
         liarr[i].onmouseleave = function() {
             spanArr[this.index].style.backgroundColor = bgcolors[this.index];
-            getPrevNode(spanArr[this.index]).style.color = '#000';
+            getPrevNode(spanArr[this.index]).style.color = '#b2fcff';
             animate(spanArr[this.index], { "height": "5" });
         }
     }

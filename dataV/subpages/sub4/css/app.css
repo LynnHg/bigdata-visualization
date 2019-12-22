@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 600px;
+}
+
+body {
+    position: relative;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    background: #050d3c url("../img/bg01.png") 0 0 / 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#loading {
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    z-index: 999;
+}
+
+
+/* layout */
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: 55px;
+    max-width: 1920px;
+    background: url("../img/header-left.png") left center no-repeat, url("../img/header-right.png") right center no-repeat;
+    background-size: 43% 100%, 43% 100%;
+    overflow: hidden;
+}
+
+.header h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #5dc2fe;
+}
+
+#container {
+    width: 100%;
+    min-width: 1200px;
+    margin: 40px auto;
+}
+
+.flex-row {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-cell {
+    margin-bottom: 20px;
+}
+
+.flex-cell-l {
+    margin-right: 20px;
+}
+
+.flex-cell-l,
+.flex-cell-r {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.chart-div {
+    width: 100%;
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.chart-title {
+    height: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #5ac8fa;
+    text-align: center;
+}
+
+
+/* .chart-div, */
+
+#flexCon {
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+    height: 100%;
+    min-height: 170px;
+    background: url("../img/panel3.png") center no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    height: 1500px;
+}
+
+.mygraphy {
+    display: block;
+    width: 600px;
+    height: 600px;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
