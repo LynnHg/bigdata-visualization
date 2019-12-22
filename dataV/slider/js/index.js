@@ -2,14 +2,14 @@
     var nav = document.querySelectorAll(".nav")[0];
     var liarr = nav.children[0].children;
     var spanArr = [];
-    var bgcolors = ["#EF7A7A", "#F26DE1", "#676EF6", "#61F36D", "#F5FA51"];
+    var bgcolors = ['#B9EDF8', '#39BAE8', '#1F6ED4', '#38a6a9', '#15a8f7'];
     // slider
-    var slider = document.querySelector(".slider");
+    // var slider = document.querySelector(".slider");
 
-    var imgWidth = slider.children[0].children[0].offsetWidth;
-    var ul = slider.children[0];
-    var boxLeftRight = slider.children[1];
-    var btnArr = boxLeftRight.children;
+    // var imgWidth = slider.children[0].children[0].offsetWidth;
+    // var ul = slider.children[0];
+    // var boxLeftRight = slider.children[1];
+    // var btnArr = boxLeftRight.children;
     //导航栏
     for (var i = 0; i < liarr.length; i++) {
         spanArr[i] = liarr[i].children[1];
@@ -29,29 +29,29 @@
         }
     }
     //slider 
-    slider.onmouseover = function() {
-        console.log(1)
-        boxLeftRight.style.display = "block";
-    }
-    slider.onmouseout = function() {
-        boxLeftRight.style.display = "none";
-    }
-    var index = 0;
-    btnArr[1].onclick = function() {
-        index++;
-        console.log(index);
+    // slider.onmouseover = function() {
+    //     console.log(1)
+    //     boxLeftRight.style.display = "block";
+    // }
+    // slider.onmouseout = function() {
+    //     boxLeftRight.style.display = "none";
+    // }
+    // var index = 0;
+    // btnArr[1].onclick = function() {
+    //     index++;
+    //     console.log(index);
 
-        if (index > ul.children.length - 1) {
-            index = 0;
-        }
-        animate(ul, { "left": -index * imgWidth });
-    }
-    btnArr[0].onclick = function() {
-        index--;
-        console.log(index);
-        if (index < 0) {
-            index = ul.children.length - 1;
-        }
-        animate(ul, { "left": -index * imgWidth });
-    }
+    //     if (index > ul.children.length - 1) {
+    //         index = 0;
+    //     }
+    //     animate(ul, { "left": -index * imgWidth });
+    // }
+    // btnArr[0].onclick = function() {
+    //     index--;
+    //     console.log(index);
+    //     if (index < 0) {
+    //         index = ul.children.length - 1;
+    //     }
+    //     animate(ul, { "left": -index * imgWidth });
+    // }
 }()

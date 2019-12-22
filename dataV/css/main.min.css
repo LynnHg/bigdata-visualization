@@ -6405,6 +6405,7 @@ footer .clearfix.wrapper {
     padding: 0px 20px 20px;
     position: absolute;
     z-index: 5;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .intro .mask-link {

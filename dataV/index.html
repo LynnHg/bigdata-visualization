@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="fonts/iconfont/iconfont.css" />
-    <link rel="stylesheet" type="text/css" href="slider/css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
     <script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
     <script type="text/javascript">
         //设置
@@ -38,28 +38,29 @@
             </div>
         </div>
         <!-- top 结束 -->
-        <!-- </header> -->
-        <div class="slider">
-            <ul class="clearfix">
-                <li>
-                    <h1>图1 </h1>
-                    <div class="slider-mask"></div>
-                </li>
-                <li>
-                    <h1>图2 </h1>
-                    <div class="slider-mask"></div>
-                </li>
-                <li>
-                    <h1>图3 </h1>
-                    <div class="slider-mask"></div>
-                </li>
-            </ul>
-            <div id="arr">
-                <span id="left"><</span>
-                <span id="right">></span>
+        <div id="container">
+            <div id="flexCon">
+                <div class="flex-row">
+                    <div class="flex-cell flex-cell-l">
+                        <div class="chart-wrapper">
+                            <h3 class="chart-title"></h3>
+                            <div class="chart-div">
+                                <div id="g1" class="mygraphy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-cell flex-cell-r">
+                        <div class="chart-wrapper">
+                            <h3 class="chart-title"></h3>
+                            <div class="chart-div chart-done">
+                                <div id="g2" class="mygraphy"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
+        <!-- </header> -->
         <div id="main">
             <div class="title title_1">可视化</div>
             <!-- slider 结束 -->
@@ -80,13 +81,13 @@
                                                         <img src="img/g1.png" />
                                                     </div>
                                                     <div class="content">
-                                                        <h2><strong>数据科学家</strong></h2>
-                                                        <h4>数据科学家拥有技能和教育背景</h4>
+                                                        <h2><strong class="mycolor">数据科学家</strong></h2>
+                                                        <h4 class="mycolor">数据科学家拥有技能和教育背景</h4>
                                                         <p> </p>
                                                         <div class="apos-area" data-apos-area="" data-doc-id="cjvrr5xt0000701jxje5oaa9z">
                                                             <div class="apos-area-widget-wrapper  " data-apos-widget-wrapper="link-default">
                                                                 <div class="apos-area-widget   " data-apos-widget="link-default" data-apos-widget-id="w83529473093108812">
-                                                                    <a href="subpages/sub1/index.html" class="" target=""> 查看详情<span
+                                                                    <a href="subpages/sub1/index.html" class="mycolor" target=""> 查看详情<span
                                                                             class="bytonicon biconowChevron"></span>
                                                                     </a>
                                                                 </div>
@@ -109,13 +110,13 @@
                                                         <img src="img/g2.png" />
                                                     </div>
                                                     <div class="content">
-                                                        <h2><strong>程序员画像</strong></h2>
-                                                        <h4>程序的性别比例，年龄占比，工作调查等</h4>
+                                                        <h2><strong class="mycolor">程序员画像</strongclass="mycolor"></h2>
+                                                        <h4 class="mycolor">程序的性别比例，年龄占比，工作调查等</h4class="mycolor">
                                                         <p> </p>
                                                         <div class="apos-area" data-apos-area="" data-doc-id="cjvrr5xt0000701jxje5oaa9z">
                                                             <div class="apos-area-widget-wrapper  " data-apos-widget-wrapper="link-default">
                                                                 <div class="apos-area-widget   " data-apos-widget="link-default" data-apos-widget-id="w83529473093108812">
-                                                                    <a href="subpages/figures/index.html" class="" target=""> 查看详情<span
+                                                                    <a href="subpages/figures/index.html"  class="mycolor" target=""> 查看详情<span
                                                                             class="bytonicon biconowChevron"></span>
                                                                     </a>
                                                                 </div>
@@ -144,13 +145,13 @@
                                                         <img src="img/map1.png" />
                                                     </div>
                                                     <div class="content">
-                                                        <h2><strong>地图数据可视化</strong></h2>
-                                                        <h4>简要描述</h4>
+                                                        <h2><strong class="mycolor"> 地图数据可视化</strong></h2>
+                                                        <h4 class="mycolor">简要描述</h4 class="mycolor">
                                                         <p> </p>
                                                         <div class="apos-area" data-apos-area="" data-doc-id="cjvrr5xt0000701jxje5oaa9z">
                                                             <div class="apos-area-widget-wrapper  " data-apos-widget-wrapper="link-default">
                                                                 <div class="apos-area-widget   " data-apos-widget="link-default" data-apos-widget-id="w83529473093108812">
-                                                                    <a href="#" class="" target=""> 查看详情<span
+                                                                    <a href="#" class="mycolor" target=""> 查看详情<span
                                                                                 class="bytonicon biconowChevron"></span>
                                                                         </a>
                                                                 </div>
@@ -173,13 +174,13 @@
                                                         <img src="img/map1.png" />
                                                     </div>
                                                     <div class="content">
-                                                        <h2><strong>地图数据可视化</strong></h2>
-                                                        <h4>简要描述</h4>
+                                                        <h2><strong class="mycolor"> 地图数据可视化</strong></h2>
+                                                        <h4 class="mycolor">简要描述</h4 class="mycolor">
                                                         <p> </p>
                                                         <div class="apos-area" data-apos-area="" data-doc-id="cjvrr5xt0000701jxje5oaa9z">
                                                             <div class="apos-area-widget-wrapper  " data-apos-widget-wrapper="link-default">
                                                                 <div class="apos-area-widget   " data-apos-widget="link-default" data-apos-widget-id="w83529473093108812">
-                                                                    <a href="#" class="" target=""> 查看详情<span
+                                                                    <a href="#" class="mycolor" target=""> 查看详情<span
                                                                                 class="bytonicon biconowChevron"></span>
                                                                         </a>
                                                                 </div>
@@ -234,16 +235,26 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script>
-        window.apos = {
-            "prefix": "",
-            "csrfCookieName": "byton-website.csrf"
-        }
-    </script>
-    <script src="apos-minified/anon-18eb1517ccff109060091e37c9bfc53dd6d1df70.js"></script>
+
+        <script>
+            window.apos = {
+                "prefix": "",
+                "csrfCookieName": "byton-website.csrf"
+            }
+        </script>
+        <script src="apos-minified/anon-18eb1517ccff109060091e37c9bfc53dd6d1df70.js"></script>
 </body>
 <script src="slider/js/util.js"></script>
 <script src="slider/js/index.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/echarts4.x.min.js"></script>
+<script type="text/javascript" src="js/echarts-map-world.js"></script>
+<script type="text/javascript" src="js/echarts-map-china.js"></script>
+<script type="text/javascript" src="js/echarts-china-provinces/jiangsu.js"></script>
+<script type="text/javascript" src="js/echarts-china-cities/jiang1_su1_su1_zhou1.js"></script>
+<script type="text/javascript" src="js/echarts-china-counties/jiang1su1_su1zhou1_kun1shan1shi4.js"></script>
+
+<script src="js/index.js"></script>
+
 
 </html>
