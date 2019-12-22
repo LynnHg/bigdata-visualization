@@ -3,7 +3,7 @@ const g1 = echarts.init(document.getElementById("g1"));
 
 option = {
         title: {
-            text: '程序员分布',
+            text: '世界程序员分布',
             x: 'center',
             textStyle: {
                 color: '#fff'
@@ -261,7 +261,7 @@ g1.setOption(option);
 const g2 = echarts.init(document.getElementById("g2"));
 option2 = {
         title: {
-            text: '世界程序员第一行代码平均年龄',
+            text: '世界程序员写第一行代码的平均年龄',
             x: 'center',
             textStyle: {
                 color: '#fff'
