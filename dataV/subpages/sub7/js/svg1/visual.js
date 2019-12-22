@@ -261,7 +261,7 @@ function draw1(data) {
                 name_list.push(e.name);
             }
         });
-    var baseTime = 3000;
+    var baseTime = 6000;
 
     // 选择颜色
     function getColor(d) {
@@ -1099,7 +1099,7 @@ function draw2(data) {
                 name_list.push(e.name);
             }
         });
-    var baseTime = 3000;
+    var baseTime = 6000;
 
     // 选择颜色
     function getColor(d) {
@@ -1937,7 +1937,7 @@ function draw3(data) {
                 name_list.push(e.name);
             }
         });
-    var baseTime = 3000;
+    var baseTime = 6000;
 
     // 选择颜色
     function getColor(d) {
@@ -2775,7 +2775,7 @@ function draw4(data) {
                 name_list.push(e.name);
             }
         });
-    var baseTime = 3000;
+    var baseTime = 6000;
 
     // 选择颜色
     function getColor(d) {
