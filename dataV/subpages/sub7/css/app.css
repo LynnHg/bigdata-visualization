@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 600px;
+}
+
+body {
+    position: relative;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    background: #050d3c url("../img/bg01.png") 0 0 / 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* layout */
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: 97px;
+    max-width: 1920px;
+    background: url("../img/header.png") center no-repeat;
+}
+
+.header h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 74px;
+    text-align: center;
+    font-size: 32px;
+    color: #5dc2fe;
+}
+
+#container {
+    width: 60%;
+    min-width: 1200px;
+    margin: 40px auto;
+}
+
+.flex-cell {
+    margin-bottom: 50px;
+}
+
+.chart-div {
+    width: 100%;
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.chart-title {
+    height: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #5ac8fa;
+    text-align: center;
+}
+
+.chart-div {
+    border-style: solid;
+    border-width: 26px 27px 27px;
+    border-image: url("../img/panel.png") 26 27 27 fill / 1 / 0 repeat;
+}
+
+.mygraphy {
+    display: block;
+    width: 1000px;
+    height: 1000px;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+}
